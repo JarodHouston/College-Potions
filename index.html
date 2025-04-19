@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>College Potions</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
@@ -13,14 +14,13 @@
   <body>
     <header>
       <h1>Potions for College Students</h1>
-      <p>Are you a college student? Then perhaps these potions can help you
-        through your college journey!</p>
-      <!-- <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </nav> -->
+      <span>Are you a college student? Then perhaps these potions can help you
+        through your college journey!</span>
     </header>
+    <div class="toggle-container">
+      Dark mode recommended
+      <button id="mode-toggle">Toggle Light/Dark Mode</button>
+    </div>
 
     <main>
       <section>
@@ -50,8 +50,8 @@
               </div>
             </div>
             <div class="card-back">
-              <p>1. Mix all ingredients.<br>2. Shake well.<br>3. Drink cautiously.<br><br>⚠️ Side effects may include hyperproductivity and minor hallucinations.</p>
-              <button class="flip-button">Back</button>
+              <div class="instructions-container"></div>
+              <button class="flip-button back-button">Back</button>
             </div>
           </div>
         </section>
@@ -74,8 +74,8 @@
               </div>
             </div>
             <div class="card-back">
-              <p>1. Mix all ingredients.<br>2. Shake well.<br>3. Drink cautiously.<br><br>⚠️ Side effects may include hyperproductivity and minor hallucinations.</p>
-              <button class="flip-button">Back</button>
+              <div class="instructions-container"></div>
+              <button class="flip-button back-button">Back</button>
             </div>
           </div>
         </section>
@@ -97,8 +97,8 @@
               </div>
             </div>
             <div class="card-back">
-              <p>1. Mix all ingredients.<br>2. Shake well.<br>3. Drink cautiously.<br><br>⚠️ Side effects may include hyperproductivity and minor hallucinations.</p>
-              <button class="flip-button">Back</button>
+              <div class="instructions-container"></div>
+              <button class="flip-button back-button">Back</button>
             </div>
           </div>
         </section>
@@ -123,23 +123,22 @@
               </div>
             </div>
             <div class="card-back">
-              <p>1. Mix all ingredients.<br>2. Shake well.<br>3. Drink cautiously.<br><br>⚠️ Side effects may include hyperproductivity and minor hallucinations.</p>
-              <button class="flip-button">Back</button>
+              <div class="instructions-container"></div>
+              <button class="flip-button back-button">Back</button>
             </div>
           </div>
         </section>
         <section class="potion-container">
-          <div id="hangover-potion"  class="card">
+          <div id="repellent-potion"  class="card">
             <div class="card-front">
-              <h2>Hangover Potion</h2>
-              <p>Hungover? No problem. Take this potion to get rid of that hangover so you can go about your day just fine!</p>
+              <h2>Roommate-repellent Potion</h2>
+              <p>Annoyed with your roommate? Take this potion to repel them! They'll leave you alone after, I promise.</p>
               <h3>Ingredients</h3>
               <ul class="ingredient-container">
-                <li>A gallon of Pedialyte</li>
-                <li>The lens of a pair of sunglasses</li>
-                <li>
-                  Two drops of Lake Arrowhead water</li>
-                <li>The Fat Texas from Fat Sal's</li>
+                <li>3 dirty socks</li>
+                <li>Essence of unwashed dishes</li>
+                <li>The last piece of toilet paper</li>
+                <li>Echo of a midnight TikTok scroll at full volume</li>
               </ul>
               <div class="button-container">
                 <button class="flip-button">Instructions</button>
@@ -147,30 +146,31 @@
               </div>
             </div>
             <div class="card-back">
-              <p>1. Mix all ingredients.<br>2. Shake well.<br>3. Drink cautiously.<br><br>⚠️ Side effects may include hyperproductivity and minor hallucinations.</p>
-              <button class="flip-button">Back</button>
+              <div class="instructions-container"></div>
+              <button class="flip-button back-button">Back</button>
             </div>
           </div>
         </section>
         <section id="love-potion2-container" class="potion-container">
-          <div id="love-potion" class="card">
+          <div id="knowledge-potion" class="card">
             <div class="card-front">
-              <h2>Love Potion</h2>
-              <p>Is there a special someone you want to fall for you? Take this love potion, make sure to follow the ingredients exactly, and that special someone will fall in love with you!</p>
-              <h3>Ingredients</h3>
-              <h3>Ingredients</h3>
-              <h3>Ingredients</h3>
-              <h3>Ingredients</h3>
-              <h3>Ingredients</h3>
-              <h3>Ingredients</h3>
-              <h3>Ingredients</h3>
-              <h3>Ingredients</h3>
+              <h2>Knowledge Potion</h2>
+              <p>Are you feeling unprepared for your next midterm or final? Do you wish you had the time to study more? Or do you want to instantly understand the material just like that?</p>
+              <p>The knowledge potion is the answer for you! Take this potion an hour before your next exam, and your brain will be filled with all the knowledge you could possible need to know for your class. The potion will last for about 2 hours, so use that time wisely!</p>
+              <p>Please keep in mind the potion's current design will only work for one subject at a time. If you have more than one exam the same day, then choose wisely... or buy more of this potion!</p>
               <h3>Ingredients</h3>
               <ul class="ingredient-container">
-                <li>Hair of desired lover</li>
-                <li>A block of rose quartz</li>
-                <li>3 freshly picked rose petals</li>
-                <li>A heart-shaped chocolate</li>
+                <li>Hair of professor</li>
+                <li>Crushed smarties</li>
+                <li>The appendix of a relevant textbook</li>
+                <li>Dirt from Einstein's grave</li>
+                <li>A handful of sand from a giant hourglass</li>
+                <li>Crumpled pages from an abandoned dissertation</li>
+                <li>Shavings from a Nobel Prize medal</li>
+                <li>Lightning struck during a philosphical debate</li>
+                <li>The sigh of a tired TA echoing through a lecture hall</li>
+                <li>A single byte from ChatGPT's long-term memory</li>
+                <li>The last 1% of a nearly-dead laptop battery</li>
               </ul>
               <div class="button-container">
                 <button class="flip-button">Instructions</button>
@@ -178,22 +178,22 @@
               </div>
             </div>
             <div class="card-back">
-              <p>1. Mix all ingredients.<br>2. Shake well.<br>3. Drink cautiously.<br><br>⚠️ Side effects may include hyperproductivity and minor hallucinations.</p>
-              <button class="flip-button">Back</button>
+              <div class="instructions-container"></div>
+              <button class="flip-button back-button">Back</button>
             </div>
           </div>
         </section>
         <section class="potion-container">
-          <div id="all-nighter-potion" class="card">
+          <div id="anti-overthinking-potion" class="card">
             <div class="card-front">
-              <h2>All-nighter Potion</h2>
-              <p>Do you need to stay up all night? Take this potion to stay awake throughout the night! You won't feel sleepy, not until a few hours after sunrise.</p>
+              <h2>Anti-overthinking Potion</h2>
+              <p>Do you overthink often? Trust me, I have and I do. Take this potion to stop overthinking for up to 2 weeks!</p>
               <h3>Ingredients</h3>
               <ul class="ingredient-container">
-                <li>6 pack of Red Bull</li>
-                <li>The feather of an owl</li>
-                <li>Vitamin D straight from the Sun</li>
-                <li>A bag of Lay's potato chips</li>
+                <li>A torn up journal entry stained with tears</li>
+                <li>The last 2% of your therapist’s patience</li>
+                <li>One 10+ year old Reddit advice thread</li>
+                <li>The pause before rereading a text again</li>
               </ul>
               <div class="button-container">
                 <button class="flip-button">Instructions</button>
@@ -201,23 +201,22 @@
               </div>
             </div>
             <div class="card-back">
-              <p>1. Mix all ingredients.<br>2. Shake well.<br>3. Drink cautiously.<br><br>⚠️ Side effects may include hyperproductivity and minor hallucinations.</p>
-              <button class="flip-button">Back</button>
+              <div class="instructions-container"></div>
+              <button class="flip-button back-button">Back</button>
             </div>
           </div>
         </section>
         <section class="potion-container">
-          <div id="hangover-potion"  class="card">
+          <div id="resume-potion"  class="card">
             <div class="card-front">
-              <h2>Hangover Potion</h2>
-              <p>Hungover? No problem. Take this potion to get rid of that hangover so you can go about your day just fine!</p>
+              <h2>Resumé Enhancing Potion</h2>
+              <p>Take this potion to give you the ability to rewrite your resumé in a way that will certainly boost your chances at bagging that internship!</p>
               <h3>Ingredients</h3>
               <ul class="ingredient-container">
-                <li>A gallon of Pedialyte</li>
-                <li>The lens of a pair of sunglasses</li>
-                <li>
-                  Two drops of Lake Arrowhead water</li>
-                <li>The Fat Texas from Fat Sal's</li>
+                <li>A collection of successful LinkedIn profiles</li>
+                <li>A handshake from a networking event</li>
+                <li>Screenshots of rejection emails</li>
+                <li>The blessing from an Early Career Recruiter</li>
               </ul>
               <div class="button-container">
                 <button class="flip-button">Instructions</button>
@@ -225,72 +224,62 @@
               </div>
             </div>
             <div class="card-back">
-              <p>1. Mix all ingredients.<br>2. Shake well.<br>3. Drink cautiously.<br><br>⚠️ Side effects may include hyperproductivity and minor hallucinations.</p>
-              <button class="flip-button">Back</button>
+              <div class="instructions-container"></div>
+              <button class="flip-button back-button">Back</button>
             </div>
           </div>
         </section>
-        
       </section>
-      <section class="form-section">
-        <section>
+
+      <div class="contact-and-history-container">
+        <section class="form-section">
           <h2>Contact Us</h2>
           <form id="contact-form">
-            <label for="first-name" class="form-name-container">
+            <fieldset>
+              <legend>Name</legend>
+              <label for="first-name" class="form-name-container">
                 First Name:
-                <input type="text" name="first-name" placeholder="*First Name" required>
-            </label>
-            <label for="last-name" class="form-name-container">
+                <input id="first-name" type="text" name="first-name" placeholder="*First Name" autocomplete="given-name" required>
+              </label>
+              <label for="last-name" class="form-name-container">
                 Last Name:
-                <input type="text" name="last-name" placeholder="*Last Name" required>
-            </label>
-            <label for="email">
+                <input id="last-name" type="text" name="last-name" placeholder="*Last Name" required>
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>Info</legend>
+              <label for="email">
                 Email:
-                <input type="email" name="email" placeholder="*Email" required>
-            </label>
-            <label for="phone-number">
+                <input id="email" type="email" name="email" placeholder="*Email" autocomplete="email" required>
+              </label>
+              <label for="phone-number">
                 Phone Number:
-                <input type="tel" name="phone-number" placeholder="Phone (optional)" pattern="^(\(?\d{3}\)?[-.\s]?)?\d{3}[-.\s]?\d{4}$">
-            </label>
-            <label for="message">
-                Message:
-                <textarea name="message" placeholder="*Message" required rows="8" cols="50"></textarea>
-            </label>
+                <input id="phone-number" type="tel" name="phone-number" placeholder="Phone (optional)" pattern="^(\(?\d{3}\)?[-.\s]?)?\d{3}[-.\s]?\d{4}$">
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>Message</legend>
+              <label for="message">
+                <textarea id="message" name="message" placeholder="*Message" required rows="8" cols="50"></textarea>
+              </label>
+            </fieldset>
             <label>
                 <input type="submit" id="submit">
             </label>
           </form>
         </section>
-        <section>
-          <h2>Sign Up</h2>
-          <p>Sign up to receive the latest updates and personalized potion suggestions to enhance your college experience! Sign up with your phone number to receive text messages.</p>
-          <form id="contact-form">
-            <label for="first-name" class="form-name-container">
-                First Name:
-                <input type="text" name="first-name" placeholder="*First Name" required>
-            </label>
-            <label for="last-name" class="form-name-container">
-                Last Name:
-                <input type="text" name="last-name" placeholder="*Last Name" required>
-            </label>
-            <label for="date-of-birth">
-                Date of Birth:
-                <input type="date" name="date-of-birth" required>
-            </label>
-            <label for="email">
-                Email:
-                <input type="email" name="email" placeholder="*Email" required>
-            </label>
-            <label for="phone-number">
-                Phone Number:
-                <input type="tel" name="phone-number" placeholder="Phone (optional)" pattern="^(\(?\d{3}\)?[-.\s]?)?\d{3}[-.\s]?\d{4}$" >
-            </label>
-            <label>
-                <input type="submit" id="submit">
-            </label>
-          </form>
+
+        <section class="history-container">
+          <h2>History of Potions</h2>
+          <p>Still don't trust us? Check out these links to learn more about potions!</p>
+          <ul>
+            <li><a href="https://en.wikipedia.org/wiki/Potion" class="trackable-link" target="_blank" rel="noopener">History of potion making</a></li>
+            <li><a href="https://www.claudiamerrill.com/blog/are-magic-potions-real" class="trackable-link" target="_blank" rel="noopener">Magic potions</a></li>
+            <li><a href="https://harrypotter.fandom.com/wiki/Potions_(class)" class="trackable-link" target="_blank" rel="noopener">Potion classes</a></li>
+          </ul>
+          <img id="potions-image" src="potions.png" alt="An array of potions"/>
         </section>
-      </section>
+      </div>
     </main>
 
     <footer>
